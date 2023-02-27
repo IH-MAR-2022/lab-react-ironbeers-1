@@ -7,6 +7,8 @@ import NewBeer from './pages/NewBeer';
 import RandomBeer from './pages/RandomBeer';
 import SingleBeer from './pages/SingleBeer';
 
+import NotFound from './pages/NotFound';
+
 import Navbar from './components/Navbar';
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
         <Route path='/random-beer' element={<RandomBeer />} />
         <Route path='/new-beer' element={<NewBeer />} />
         <Route path='/beers/:id' element={<SingleBeer />} />
+        <Route path='*' element={<NotFound />} />
 
       </Routes>
 
